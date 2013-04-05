@@ -1,0 +1,65 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #444;
+$background-color-success: #82a544;
+$background-color-failure: #CC1010;
+
+$tail-height: 200px;
+
+// ----------------------------------------------------------------------------
+// Widget-comment styles
+// ----------------------------------------------------------------------------
+.widget-jenkins-status {
+
+  background-image: url('/assets/jenkins.png');
+  background-color: $background-color;
+  background-repeat: no-repeat;
+
+  &.success {
+    background-color: $background-color-success;
+  }
+
+  &.failure {
+    background-color: $background-color-failure;
+  }
+
+  .project-name{
+    font-weight: bold;
+    font-size: 44px; }
+
+  .project-updated{
+    font-size: 30px; }
+
+  .duration{
+    font-size: small;}
+
+  .project-info{
+    font-size: x-small;
+    text-align: left;
+
+    .author{
+      font-weight: bold; }
+
+    .comment{
+      margin: 4px 0;
+      white-space: pre-wrap;}}
+
+  .project-history{
+    display: inline-block;
+    margin-top: 25px;
+    text-align: center;
+
+    .project-history-item{
+      float: left;
+      position: relative;
+      margin: 2px;
+      width: 22px;
+      height: 22px; }}
+
+  .dot:before{
+    content: '.'; }
+
+  .f:before{
+    content: 'f'; }
+}
