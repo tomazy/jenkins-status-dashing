@@ -1,7 +1,5 @@
 assets
 config.ru
 dashboards
-Gemfile
-Gemfile.lock
 public
 .vimrc
