@@ -25,7 +25,7 @@
     {
       "event" : "jenkins-status-1",
       "class" : "JenkinsStatus",
-      "every" : "10s",
+      "every" : "1m",
       "data"  : {
         "code"    : "jenkins",
         "url"     : "https://ci.jenkins-ci.org",
@@ -35,7 +35,7 @@
     {
       "event" : "jenkins-status-2",
       "class" : "JenkinsStatus",
-      "every" : "10s",
+      "every" : "1m",
       "data"  : {
         "code"    : "selenium-tests",
         "url"     : "https://ci.jenkins-ci.org",
