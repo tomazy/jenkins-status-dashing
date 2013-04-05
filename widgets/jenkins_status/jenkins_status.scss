@@ -2,7 +2,7 @@
 // Sass declarations
 // ----------------------------------------------------------------------------
 $background-color:  #444;
-$background-color-success: #82a544;
+$background-color-success: #74933D;
 $background-color-failure: #CC1010;
 
 $tail-height: 200px;
@@ -35,7 +35,7 @@ $tail-height: 200px;
     font-size: small;}
 
   .project-info{
-    font-size: x-small;
+    font-size: small;
     text-align: left;
 
     .author{
@@ -62,4 +62,9 @@ $tail-height: 200px;
 
   .f:before{
     content: 'f'; }
+
+  .updated-at{
+    font-size: small;
+    opacity: 0.4;
+  }
 }
