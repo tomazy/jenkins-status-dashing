@@ -1,6 +1,7 @@
-public
 assets
-config
+config.ru
+dashboards
 Gemfile
 Gemfile.lock
-config.ru
+public
+.vimrc

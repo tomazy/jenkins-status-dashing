@@ -1,6 +1,5 @@
 class Dashing.JenkinsStatus extends Dashing.Widget
   ready: ->
-    console.log 'ready', @
     @_update()
 
   _duration: (span, digits) ->

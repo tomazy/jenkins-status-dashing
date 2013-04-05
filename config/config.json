@@ -1,0 +1,46 @@
+{
+  "dashboards": {
+
+    "ci": {
+      "title" : "CI Monitor",
+
+      "widget_width"  : 370,
+      "widget_height" : 340,
+      "num_columns"   : 5,
+
+      "widgets": [
+        {
+          "view"  : "JenkinsStatus",
+          "event" : "jenkins-status-1"
+        },
+        {
+          "view"  : "JenkinsStatus",
+          "event" : "jenkins-status-2"
+        }
+      ]
+    }
+  },
+
+  "jobs": [
+    {
+      "event" : "jenkins-status-1",
+      "class" : "JenkinsStatus",
+      "every" : "10s",
+      "data"  : {
+        "code"    : "jenkins",
+        "url"     : "https://ci.jenkins-ci.org",
+        "project" : "jenkins_main_trunk"
+      }
+    },
+    {
+      "event" : "jenkins-status-2",
+      "class" : "JenkinsStatus",
+      "every" : "10s",
+      "data"  : {
+        "code"    : "selenium-tests",
+        "url"     : "https://ci.jenkins-ci.org",
+        "project" : "selenium-tests"
+      }
+    }
+  ]
+}
