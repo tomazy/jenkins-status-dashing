@@ -14,7 +14,12 @@ module Jenkins
     def load(path)
       uri = URI(url)
       uri.path = path + "/api/json"
-      JSON.parse(open(uri).read)
+
+      options = {}
+      options[:http_basic_authentication] = uri.userinfo.split(':') unless uri.userinfo.nil?
+      uri.userinfo = ''
+
+      JSON.parse(open(uri, options).read)
     end
 
     def load_project(name)
