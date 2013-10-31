@@ -3,3 +3,5 @@ config.ru
 dashboards
 public
 .vimrc
+*DS_STORE
+history.yml
