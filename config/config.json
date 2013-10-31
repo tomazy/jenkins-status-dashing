@@ -37,9 +37,9 @@
       "class" : "JenkinsStatus",
       "every" : "1m",
       "data"  : {
-        "code"    : "selenium-tests",
+        "code"    : "jenkins RC",
         "url"     : "https://ci.jenkins-ci.org",
-        "project" : "selenium-tests"
+        "project" : "jenkins_rc_branch"
       }
     }
   ]
