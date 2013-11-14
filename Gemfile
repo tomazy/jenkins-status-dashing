@@ -1,3 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'dashing', git: 'git://github.com/tomazy/dashing.git', branch: 'dashboard-from-config'
+gem 'dashing', github: 'tomazy/dashing', branch: 'dashboard-from-config'
+
